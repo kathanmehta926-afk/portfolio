@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kathan Mehta | Computer Science & Data Science Portfolio</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Portfolio of Kathan Mehta - Computer Science Engineering Student at Indus University, Data Science & AI Enthusiast. Python, C++, SQL, Machine Learning.">
+  <meta name="keywords" content="Kathan Mehta, Portfolio, Computer Science, Data Science, AI, Python, C++, Indus University, Ahmedabad, Software Engineer">
+  <meta name="author" content="Kathan Mehta">
+  <meta property="og:title" content="Kathan Mehta | CS & Data Science Portfolio">
+  <meta property="og:description" content="Explore projects, skills, and experience in Data Science, AI, and Software Engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/kathanmehta926-afk/portfolio">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23070a09'/%3E%3Ctext x='50' y='64' font-family='monospace' font-size='44' font-weight='bold' fill='%2300e599' text-anchor='middle'%3EKM%3C/text%3E%3C/svg%3E">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for crisp tech icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Interactive Cursor Follower -->
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+  <div class="custom-cursor-ring" id="cursorRing"></div>
+
+  <!-- Ambient Light Green Grid Background -->
+  <div class="bg-grid-overlay"></div>
+  <div class="bg-glow-point point-top"></div>
+  <div class="bg-glow-point point-bottom"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header-nav" id="mainHeader">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" data-magnetic>
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">KM</span>
+        <span class="logo-bracket">/&gt;</span>
+        <span class="status-pulse-badge" title="Actively Seeking Internships">
+          <span class="pulse-dot"></span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+          <li><a href="#experience" class="nav-link" data-nav="experience">Experience</a></li>
+          <li><a href="#terminal" class="nav-link" data-nav="terminal">Terminal</a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button id="soundToggleBtn" class="action-icon-btn" title="Toggle UI Sound Effects" aria-label="Sound Toggle">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+        <a href="#contact" class="uiverse-btn-primary nav-cta-btn" data-magnetic>
+          <span>Connect</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-content">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link"><span>01.</span> About</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><span>02.</span> Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><span>03.</span> Projects</a></li>
+        <li><a href="#experience" class="mobile-nav-link"><span>04.</span> Experience</a></li>
+        <li><a href="#terminal" class="mobile-nav-link"><span>05.</span> Terminal</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span>06.</span> Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <div class="availability-chip">
+          <span class="pulse-dot"></span> Available for 2025/2026 Internships
+        </div>
+        <div class="mobile-socials">
+          <a href="https://github.com/kathanmehta926-afk" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/kathan-mehta-265087259" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:kathanmehta926@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        
+        <div class="hero-badge-wrapper">
+          <div class="status-chip" data-magnetic>
+            <span class="pulse-dot"></span>
+            <span>B.Tech Computer Science &bull; Class of 2028</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-highlight">Kathan Mehta</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Computer Science Engineering Student &amp; <span class="highlight-token">Data Science &amp; AI</span> Enthusiast based in Ahmedabad, India. Focused on algorithmic problem solving, exploratory data analysis, and building reliable software.
+        </p>
+
+        <!-- CTA Action Buttons (Uiverse Inspired) -->
+        <div class="hero-actions">
+          <a href="#projects" class="uiverse-btn-solid" data-magnetic>
+            <i class="fa-solid fa-cube"></i>
+            <span>View Projects</span>
+          </a>
+          <a href="mailto:kathanmehta926@gmail.com" class="uiverse-btn-outline" data-magnetic>
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Hire / Contact Me</span>
+          </a>
+          <a href="https://github.com/kathanmehta926-afk" target="_blank" rel="noopener noreferrer" class="uiverse-btn-ghost" data-magnetic title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/kathan-mehta-265087259" target="_blank" rel="noopener noreferrer" class="uiverse-btn-ghost" data-magnetic title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+
+        <!-- Quick Stats Bento Strip -->
+        <div class="hero-stats-strip">
+          <div class="stat-card spotlight-card">
+            <div class="stat-number" data-target="2028">2028</div>
+            <div class="stat-label">Graduation Year</div>
+            <div class="stat-sub">Indus University</div>
+          </div>
+          <div class="stat-card spotlight-card">
+            <div class="stat-number" data-target="3">3+</div>
+            <div class="stat-label">Core Projects</div>
+            <div class="stat-sub">Data Science &amp; C++</div>
+          </div>
+          <div class="stat-card spotlight-card">
+            <div class="stat-number" data-target="3">3</div>
+            <div class="stat-label">Certifications</div>
+            <div class="stat-sub">Internshala &amp; AI/ML</div>
+          </div>
+          <div class="stat-card spotlight-card">
+            <div class="stat-number" data-target="100">100%</div>
+            <div class="stat-label">Dedication</div>
+            <div class="stat-sub">Open to Internships</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Bento Grid 21st.dev Style) -->
+    <section class="section-container" id="about">
+      <div class="section-header">
+        <span class="section-tag">// 01. WHO I AM</span>
+        <h2 class="section-heading">About Me &amp; Objective</h2>
+        <p class="section-subtext">Driven by structured logic, curiosity in data patterns, and engineering excellence.</p>
+      </div>
+
+      <div class="bento-grid">
+        
+        <!-- Large Profile Card -->
+        <div class="bento-card bento-span-2 spotlight-card">
+          <div class="card-glow-indicator"></div>
+          <div class="bento-card-header">
+            <div class="card-icon-box"><i class="fa-solid fa-user-astronaut"></i></div>
+            <span class="card-category">Background</span>
+          </div>
+          <h3 class="bento-card-title">Computer Science Engineering Student</h3>
+          <p class="bento-text">
+            I am a third-year B.Tech student in Computer Science Engineering at <strong>Indus University, Ahmedabad</strong> (graduating in 2028). My journey revolves around understanding how data fuels intelligence and how robust data structures power high-efficiency systems.
+          </p>
+          <p class="bento-text">
+            I'm keen on software development, data science, and AI/ML — applying rigorous programming practices to transform raw datasets into actionable insights and clean applications.
+          </p>
+          <div class="meta-tag-list">
+            <span class="meta-tag"><i class="fa-solid fa-location-dot"></i> Ahmedabad, India</span>
+            <span class="meta-tag"><i class="fa-solid fa-graduation-cap"></i> Indus University</span>
+            <span class="meta-tag"><i class="fa-solid fa-code"></i> Python &amp; C++</span>
+          </div>
+        </div>
+
+        <!-- Objective Card -->
+        <div class="bento-card spotlight-card">
+          <div class="card-glow-indicator"></div>
+          <div class="bento-card-header">
+            <div class="card-icon-box"><i class="fa-solid fa-bullseye"></i></div>
+            <span class="card-category">Internship Objective</span>
+          </div>
+          <h3 class="bento-card-title">What I'm Seeking</h3>
+          <p class="bento-text">
+            Seeking an internship opportunity to apply programming, problem-solving, and data skills while learning from real-world engineering teams and contributing to reliable, user-focused technology.
+          </p>
+          <div class="status-indicator-box">
+            <div class="status-indicator-row">
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <span>Available for Summer/Fall Internship</span>
+            </div>
+            <div class="status-indicator-row">
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <span>Remote or On-Site / Hybrid</span>
+            </div>
+            <div class="status-indicator-row">
+              <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+              <span>Full-time or Part-time roles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strengths Bento -->
+        <div class="bento-card spotlight-card">
+          <div class="card-glow-indicator"></div>
+          <div class="bento-card-header">
+            <div class="card-icon-box"><i class="fa-solid fa-bolt"></i></div>
+            <span class="card-category">Core Strengths</span>
+          </div>
+          <h3 class="bento-card-title">How I Work</h3>
+          <ul class="strength-list">
+            <li>
+              <span class="strength-bullet"></span>
+              <strong>Problem Solving:</strong> Methodical decomposition of edge cases &amp; algorithmic logic.
+            </li>
+            <li>
+              <span class="strength-bullet"></span>
+              <strong>Fast Learner:</strong> Rapid adaptation to new frameworks, libraries, and pipelines.
+            </li>
+            <li>
+              <span class="strength-bullet"></span>
+              <strong>Team Collaboration:</strong> Clear documentation, cross-functional communication, Git workflows.
+            </li>
+            <li>
+              <span class="strength-bullet"></span>
+              <strong>Presentation:</strong> Delivering clear insights from complex data analysis.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Relevant Coursework Bento -->
+        <div class="bento-card bento-span-2 spotlight-card">
+          <div class="card-glow-indicator"></div>
+          <div class="bento-card-header">
+            <div class="card-icon-box"><i class="fa-solid fa-book-open"></i></div>
+            <span class="card-category">Academics</span>
+          </div>
+          <h3 class="bento-card-title">Relevant Academic Coursework</h3>
+          <p class="bento-text">Solid theoretical foundations backing practical implementations:</p>
+          <div class="coursework-grid">
+            <div class="course-pill"><i class="fa-solid fa-sitemap"></i> Data Structures &amp; Algorithms</div>
+            <div class="course-pill"><i class="fa-solid fa-cubes"></i> Object-Oriented Programming (OOP)</div>
+            <div class="course-pill"><i class="fa-solid fa-database"></i> Database Management &amp; SQL</div>
+            <div class="course-pill"><i class="fa-solid fa-microchip"></i> Operating Systems</div>
+            <div class="course-pill"><i class="fa-solid fa-memory"></i> Microprocessors &amp; Architecture</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section-container" id="skills">
+      <div class="section-header">
+        <span class="section-tag">// 02. TECHNICAL ARSENAL</span>
+        <h2 class="section-heading">Skills &amp; Capabilities</h2>
+        <p class="section-subtext">Hands-on experience across programming languages, data pipelines, and developer tooling.</p>
+      </div>
+
+      <!-- Skill Category Filter Buttons -->
+      <div class="filter-controls">
+        <button class="filter-tab-btn active" data-filter="all">All Skills</button>
+        <button class="filter-tab-btn" data-filter="languages">Languages</button>
+        <button class="filter-tab-btn" data-filter="data">Data Science &amp; AI</button>
+        <button class="filter-tab-btn" data-filter="tools">Tools &amp; Viz</button>
+        <button class="filter-tab-btn" data-filter="core">CS Fundamentals</button>
+      </div>
+
+      <div class="skills-grid" id="skillsContainer">
+        
+        <!-- Languages -->
+        <div class="skill-item spotlight-card" data-category="languages">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Python</div>
+            <div class="skill-desc">Pandas, NumPy, Scripting, Automation</div>
+          </div>
+          <span class="skill-badge">Primary</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="languages">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">C++</div>
+            <div class="skill-desc">STL, Memory, DSA Optimization</div>
+          </div>
+          <span class="skill-badge">Core</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="languages">
+          <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Java</div>
+            <div class="skill-desc">OOP Architecture, Collections</div>
+          </div>
+          <span class="skill-badge">Advanced</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="languages">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">SQL</div>
+            <div class="skill-desc">Queries, Joins, Aggregation, Relational Schema</div>
+          </div>
+          <span class="skill-badge">Core</span>
+        </div>
+
+        <!-- Data Science -->
+        <div class="skill-item spotlight-card" data-category="data">
+          <div class="skill-icon"><i class="fa-solid fa-table"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Pandas</div>
+            <div class="skill-desc">Data Cleaning, Reshaping, GroupBy, Imputation</div>
+          </div>
+          <span class="skill-badge">Specialist</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="data">
+          <div class="skill-icon"><i class="fa-solid fa-calculator"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">NumPy</div>
+            <div class="skill-desc">Multidimensional Arrays, Vectorization</div>
+          </div>
+          <span class="skill-badge">Specialist</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="data">
+          <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Machine Learning</div>
+            <div class="skill-desc">Supervised/Unsupervised Basics, Evaluation</div>
+          </div>
+          <span class="skill-badge">Certified</span>
+        </div>
+
+        <!-- Tools & Visualization -->
+        <div class="skill-item spotlight-card" data-category="tools">
+          <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Tableau</div>
+            <div class="skill-desc">Interactive Dashboards &amp; Visual Analytics</div>
+          </div>
+          <span class="skill-badge">Visualization</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="tools">
+          <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">VS Code &amp; Jupyter</div>
+            <div class="skill-desc">Interactive Notebooks &amp; IDE Workflows</div>
+          </div>
+          <span class="skill-badge">Workflow</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="tools">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Git &amp; GitHub</div>
+            <div class="skill-desc">Version Control, Branching, Collaboration</div>
+          </div>
+          <span class="skill-badge">Workflow</span>
+        </div>
+
+        <!-- CS Fundamentals -->
+        <div class="skill-item spotlight-card" data-category="core">
+          <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">Data Structures</div>
+            <div class="skill-desc">Trees, Graphs, Queues, Stacks, Hashmaps</div>
+          </div>
+          <span class="skill-badge">Fundamental</span>
+        </div>
+
+        <div class="skill-item spotlight-card" data-category="core">
+          <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+          <div class="skill-info">
+            <div class="skill-name">OOP &amp; DBMS</div>
+            <div class="skill-desc">Encapsulation, Polymorphism, ACID, Normalization</div>
+          </div>
+          <span class="skill-badge">Fundamental</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (With Interactive Simulators) -->
+    <section class="section-container" id="projects">
+      <div class="section-header">
+        <span class="section-tag">// 03. FEATURED WORK</span>
+        <h2 class="section-heading">Projects &amp; Case Studies</h2>
+        <p class="section-subtext">Practical implementations showcasing data engineering, exploratory analysis, and algorithms.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: Student Performance Data Analysis -->
+        <article class="project-card spotlight-card">
+          <div class="project-header">
+            <div class="project-tag-wrap">
+              <span class="project-type-tag">Data Science &bull; EDA</span>
+              <span class="project-status-tag">Completed</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kathanmehta926-afk" target="_blank" rel="noopener noreferrer" title="View Source on GitHub" class="icon-link">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">Student Performance Data Analysis</h3>
+          
+          <p class="project-desc">
+            End-to-end exploratory data analysis on student academic records to isolate determinants of scholastic success, including study habits, socioeconomic factors, and attendance.
+          </p>
+
+          <ul class="project-highlights">
+            <li><i class="fa-solid fa-check"></i> Conducted automated missing data imputation, outlier remediation, and categorical encoding.</li>
+            <li><i class="fa-solid fa-check"></i> Discovered strong positive correlation (r = 0.78) between targeted revision time and examination percentile.</li>
+            <li><i class="fa-solid fa-check"></i> Created visual distribution charts to communicate actionable insights for academic counselors.</li>
+          </ul>
+
+          <!-- Interactive Mini-Simulation Widget -->
+          <div class="interactive-project-widget">
+            <div class="widget-header">
+              <span class="widget-title"><i class="fa-solid fa-chart-simple"></i> Live EDA Correlation Explorer</span>
+              <span class="widget-status">Interactive</span>
+            </div>
+            <div class="widget-body">
+              <div class="widget-control-row">
+                <label for="edaFactor">Analyze Variable:</label>
+                <select id="edaFactor" class="custom-select">
+                  <option value="studyTime">Weekly Study Hours</option>
+                  <option value="attendance">Class Attendance (%)</option>
+                  <option value="sleep">Average Sleep (Hours)</option>
+                </select>
+              </div>
+              <div class="widget-stats-display" id="edaOutput">
+                <div class="stat-mini">
+                  <span class="mini-label">Correlation (r)</span>
+                  <span class="mini-val text-green" id="edaCorr">+0.78</span>
+                </div>
+                <div class="stat-mini">
+                  <span class="mini-label">Score Impact</span>
+                  <span class="mini-val text-green" id="edaImpact">+14.2%</span>
+                </div>
+                <div class="stat-mini">
+                  <span class="mini-label">Key Insight</span>
+                  <span class="mini-val" id="edaSummary">High positive correlation with final grades.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Pandas</span>
+            <span class="tech-pill">Data Visualization</span>
+            <span class="tech-pill">Matplotlib</span>
+            <span class="tech-pill">Statistical Analysis</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: IMDB Movie Data Analysis -->
+        <article class="project-card spotlight-card">
+          <div class="project-header">
+            <div class="project-tag-wrap">
+              <span class="project-type-tag">Data Analysis &bull; Aggregation</span>
+              <span class="project-status-tag">Completed</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kathanmehta926-afk" target="_blank" rel="noopener noreferrer" title="View Source on GitHub" class="icon-link">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">IMDB Movie Dataset Analysis</h3>
+          
+          <p class="project-desc">
+            Deep dive into an extensive IMDB movie dataset to analyze multi-decade cinema trends, rating patterns, budget-to-revenue ratios, and genre evolution.
+          </p>
+
+          <ul class="project-highlights">
+            <li><i class="fa-solid fa-check"></i> Practiced structured preprocessing, multi-column aggregation, and dataset cleansing using Pandas.</li>
+            <li><i class="fa-solid fa-check"></i> Computed statistical distributions across rating quartiles, runtime anomalies, and box office returns.</li>
+            <li><i class="fa-solid fa-check"></i> Generated clear summaries detailing the critical factors influencing audience appraisal.</li>
+          </ul>
+
+          <!-- Interactive Query Sandbox -->
+          <div class="interactive-project-widget">
+            <div class="widget-header">
+              <span class="widget-title"><i class="fa-solid fa-filter"></i> Instant Query Simulator</span>
+              <span class="widget-status">Pandas Mock</span>
+            </div>
+            <div class="widget-body">
+              <div class="filter-pill-group" id="genreFilterGroup">
+                <button class="genre-btn active" data-genre="Sci-Fi">Sci-Fi</button>
+                <button class="genre-btn" data-genre="Drama">Drama</button>
+                <button class="genre-btn" data-genre="Action">Action</button>
+                <button class="genre-btn" data-genre="Animation">Animation</button>
+              </div>
+              <div class="query-code-preview">
+                <code>df[df['Genre'] == '<span id="activeGenreCode">Sci-Fi</span>'].groupby('Decade')['Rating'].mean()</code>
+              </div>
+              <div class="query-stat-result" id="genreResult">
+                <span>Avg Rating: <strong>8.1 / 10</strong></span>
+                <span>Top Trend: <strong>High Return on Budget</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Pandas</span>
+            <span class="tech-pill">NumPy</span>
+            <span class="tech-pill">Exploratory Analysis</span>
+            <span class="tech-pill">Jupyter</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: DSA Algorithm Implementations & Visualizer -->
+        <article class="project-card spotlight-card">
+          <div class="project-header">
+            <div class="project-tag-wrap">
+              <span class="project-type-tag">C++ &bull; Systems &amp; DSA</span>
+              <span class="project-status-tag">Completed</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kathanmehta926-afk" target="_blank" rel="noopener noreferrer" title="View Source on GitHub" class="icon-link">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">DSA Algorithm Implementations</h3>
+          
+          <p class="project-desc">
+            Engineered and benchmarked fundamental search and sorting algorithms in C++ with memory profiling, recursion stack inspection, and comparative asymptotic analysis.
+          </p>
+
+          <ul class="project-highlights">
+            <li><i class="fa-solid fa-check"></i> Implemented Linear Search, Binary Search, Bubble Sort, Selection Sort, Quick Sort, and Merge Sort.</li>
+            <li><i class="fa-solid fa-check"></i> Compared algorithm time complexity: O(n log n) divide-and-conquer vs O(n&sup2;) quadratic sorts.</li>
+            <li><i class="fa-solid fa-check"></i> Practiced modular C++ programming using pointers, references, and optimized memory allocations.</li>
+          </ul>
+
+          <!-- Live Interactive Sorting Visualizer Widget -->
+          <div class="interactive-project-widget">
+            <div class="widget-header">
+              <span class="widget-title"><i class="fa-solid fa-arrow-down-short-wide"></i> Live Sorting Step Visualizer</span>
+              <span class="widget-status">Live C++ Engine Demo</span>
+            </div>
+            <div class="widget-body">
+              <div class="sorting-controls">
+                <button id="sortBubbleBtn" class="algo-btn">Bubble Sort</button>
+                <button id="sortQuickBtn" class="algo-btn">Quick / Merge</button>
+                <button id="sortResetBtn" class="algo-btn-outline">Shuffle</button>
+              </div>
+              <div class="sorting-bar-container" id="sortingVisualizer">
+                <!-- Bars dynamically rendered via JS -->
+              </div>
+              <div class="sorting-meta-info" id="sortingMeta">
+                <span>Selected: <strong>Quick Sort</strong></span>
+                <span>Worst Case: <strong>O(n log n) avg</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tech-stack">
+            <span class="tech-pill">C++</span>
+            <span class="tech-pill">DSA</span>
+            <span class="tech-pill">Algorithms</span>
+            <span class="tech-pill">Time Complexity</span>
+            <span class="tech-pill">Problem Solving</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & CERTIFICATIONS SECTION -->
+    <section class="section-container" id="experience">
+      <div class="section-header">
+        <span class="section-tag">// 04. JOURNEY &amp; CREDENTIALS</span>
+        <h2 class="section-heading">Experience &amp; Certifications</h2>
+        <p class="section-subtext">Leadership, continuous learning, and verified technical credentials.</p>
+      </div>
+
+      <div class="experience-cert-layout">
+        
+        <!-- Experience Column -->
+        <div class="timeline-column">
+          <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Experience &amp; Leadership</h3>
+          
+          <div class="timeline-item spotlight-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Indus University &bull; Present</span>
+              <span class="timeline-role-badge">Volunteer</span>
+            </div>
+            <h4 class="timeline-title">Robotics Club Volunteer</h4>
+            <div class="timeline-org">Indus University, Ahmedabad</div>
+            <p class="timeline-desc">
+              Contributed actively to club workshops, robotics demonstrations, and university technical events.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Supported event coordination, stage demonstrations, and technical setup for engineering attendees.</li>
+              <li>Fostered teamwork, presentation skills, and cross-disciplinary collaboration with senior mentors.</li>
+              <li>Assisted in peer learning sessions on hardware-software interfacing and coding basics.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item spotlight-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Expected 2028</span>
+              <span class="timeline-role-badge">Academic Degree</span>
+            </div>
+            <h4 class="timeline-title">B.Tech - Computer Science Engineering</h4>
+            <div class="timeline-org">Indus University, Ahmedabad</div>
+            <p class="timeline-desc">
+              Third-year student building solid grounding in computer science theory, algorithms, software engineering, and machine learning principles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certifications Column -->
+        <div class="cert-column">
+          <h3 class="column-title"><i class="fa-solid fa-award"></i> Verified Certifications</h3>
+
+          <div class="cert-card spotlight-card">
+            <div class="cert-badge-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert-content">
+              <div class="cert-provider">Internshala Certified</div>
+              <h4 class="cert-name">Data Science with AI</h4>
+              <p class="cert-details">
+                Comprehensive training covering statistical inference, machine learning model building, data cleansing with Python &amp; Pandas, and neural network basics.
+              </p>
+              <div class="cert-tag">Verified Coursework</div>
+            </div>
+          </div>
+
+          <div class="cert-card spotlight-card">
+            <div class="cert-badge-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="cert-content">
+              <div class="cert-provider">Technical Certification</div>
+              <h4 class="cert-name">AI / Machine Learning Certification</h4>
+              <p class="cert-details">
+                Hands-on practical exploration of predictive analytics, algorithm tuning, feature scaling, and model evaluation metrics.
+              </p>
+              <div class="cert-tag">Machine Learning</div>
+            </div>
+          </div>
+
+          <div class="cert-card spotlight-card">
+            <div class="cert-badge-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="cert-content">
+              <div class="cert-provider">Intensive Track</div>
+              <h4 class="cert-name">2-Month Data Science Training</h4>
+              <p class="cert-details">
+                Rigorous curriculum practicing Python data pipelines, exploratory data analysis, real-world datasets, and visual storyboarding.
+              </p>
+              <div class="cert-tag">2-Month Intensive</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION (21st.dev Developer Feature) -->
+    <section class="section-container" id="terminal">
+      <div class="section-header">
+        <span class="section-tag">// 05. INTERACTIVE CLI</span>
+        <h2 class="section-heading">Developer Console</h2>
+        <p class="section-subtext">Interact directly with Kathan's profile via an in-browser Linux CLI simulator.</p>
+      </div>
+
+      <div class="terminal-wrapper spotlight-card">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="terminal-title">kathan@portfolio: ~/resume-cli</div>
+          <div class="terminal-status"><span class="pulse-dot"></span> bash</div>
+        </div>
+
+        <div class="terminal-body" id="terminalOutput">
+          <div class="term-line welcome-text">
+            Kathan Mehta CLI [Version 2.0.0-indus]
+          </div>
+          <div class="term-line">
+            Type <span class="term-cmd-highlight">help</span> to view available commands, or click any quick command below.
+          </div>
+          <div class="term-quick-commands">
+            <button class="term-quick-btn" data-cmd="skills">skills</button>
+            <button class="term-quick-btn" data-cmd="projects">projects</button>
+            <button class="term-quick-btn" data-cmd="contact">contact</button>
+            <button class="term-quick-btn" data-cmd="certifications">certifications</button>
+            <button class="term-quick-btn" data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <div class="terminal-input-row">
+          <span class="term-prompt">kathan@portfolio:~$</span>
+          <input type="text" id="terminalInput" class="term-input" placeholder="type 'help' and press Enter..." autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-container" id="contact">
+      <div class="section-header">
+        <span class="section-tag">// 06. GET IN TOUCH</span>
+        <h2 class="section-heading">Let's Connect</h2>
+        <p class="section-subtext">I am actively looking for internship roles in Software Development, Data Science, and AI/ML.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info Cards -->
+        <div class="contact-info-column">
+          
+          <div class="contact-card spotlight-card" id="emailCard">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Email Address</span>
+              <a href="mailto:kathanmehta926@gmail.com" class="contact-value">kathanmehta926@gmail.com</a>
+            </div>
+            <button class="copy-btn" id="copyEmailBtn" title="Copy Email to Clipboard" data-copy="kathanmehta926@gmail.com">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="contact-card spotlight-card" id="phoneCard">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Phone / WhatsApp</span>
+              <a href="tel:+917573023020" class="contact-value">+91 75730 23020</a>
+            </div>
+            <button class="copy-btn" id="copyPhoneBtn" title="Copy Phone to Clipboard" data-copy="+917573023020">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="contact-card spotlight-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-text">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Ahmedabad, Gujarat, India</span>
+            </div>
+          </div>
+
+          <div class="social-links-bar">
+            <a href="https://github.com/kathanmehta926-afk" target="_blank" rel="noopener noreferrer" class="social-btn" data-magnetic title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kathan-mehta-265087259" target="_blank" rel="noopener noreferrer" class="social-btn" data-magnetic title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Quick Message Form -->
+        <div class="contact-form-column spotlight-card">
+          <h3 class="form-title">Send a Direct Message</h3>
+          <p class="form-desc">Have an internship role, project idea, or question? Send me a note:</p>
+
+          <form id="contactForm" class="direct-contact-form">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" required placeholder="e.g. Alex Johnson" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" required placeholder="alex@company.com" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="messageSubject">Subject / Role</label>
+              <input type="text" id="messageSubject" required placeholder="Internship Opportunity / Inquiry" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Message</label>
+              <textarea id="senderMessage" rows="4" required placeholder="Hello Kathan, we reviewed your portfolio and would like to connect..." class="form-input"></textarea>
+            </div>
+
+            <button type="submit" class="uiverse-btn-solid form-submit-btn" id="submitFormBtn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="formFeedback" class="form-feedback-msg"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Kathan Mehta</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Building clean data solutions &amp; high-performance software.</p>
+      </div>
+      
+      <div class="footer-right">
+        <div class="footer-meta">
+          <span>&copy; <span id="currentYear"></span> Kathan Mehta. All rights reserved.</span>
+          <span class="footer-sub">Designed with modern green theme &bull; Deployed on Vercel</span>
+        </div>
+        <a href="#hero" class="back-to-top-btn" id="backToTop" aria-label="Back to top" data-magnetic>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
